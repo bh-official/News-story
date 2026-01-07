@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
       <nav class ="navbar">
@@ -22,6 +22,12 @@
     
         <h1 class="highlight">Daily News Today</h1>
         <p class="highlight">Your trusted source for simple and clear news</p>
+        <p class="date">Today’s date: <span id="date"></span></p>
+
+    <script>
+        const today = new Date();
+        document.getElementById("date").textContent = today.toDateString();
+    </script>
     
 
     <main>
